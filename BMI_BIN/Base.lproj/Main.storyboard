@@ -64,7 +64,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <segue destination="Ojh-kr-NRf" kind="presentation" modalPresentationStyle="fullScreen" id="GLe-av-DFK"/>
+                                    <action selector="calculateBMI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="naU-Lw-DTn"/>
+                                    <segue destination="Ojh-kr-NRf" kind="presentation" identifier="toSecondVC" modalPresentationStyle="fullScreen" id="GLe-av-DFK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -99,7 +100,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gYV-w1-Tes">
-                                <rect key="frame" x="30" y="100" width="333" height="75"/>
+                                <rect key="frame" x="30" y="100" width="333" height="61"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaN-5Q-yV5">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="20.333333333333332"/>
@@ -107,13 +108,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ja-Ae-LW1">
-                                        <rect key="frame" x="0.0" y="20.333333333333332" width="333" height="34.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLn-X7-Mc1">
+                                        <rect key="frame" x="0.0" y="20.333333333333329" width="333" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1e-s9-lob">
-                                        <rect key="frame" x="0.0" y="54.666666666666664" width="333" height="20.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="40.666666666666657" width="333" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -124,6 +126,9 @@
                                 <rect key="frame" x="30" y="767.66666666666663" width="333" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="backButtonTap:" destination="Ojh-kr-NRf" eventType="touchUpInside" id="QMl-1i-wzR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aDW-ae-ckB"/>
@@ -141,7 +146,7 @@
                     <connections>
                         <outlet property="backButton" destination="INP-He-sLd" id="1se-PT-MWC"/>
                         <outlet property="bmiGradeResult" destination="n1e-s9-lob" id="o6c-24-DMg"/>
-                        <outlet property="bmiNumResult" destination="3Ja-Ae-LW1" id="oK0-qz-5JL"/>
+                        <outlet property="bmiNumResult" destination="tLn-X7-Mc1" id="mYw-pC-8bt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Awk-Vl-Ddz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
