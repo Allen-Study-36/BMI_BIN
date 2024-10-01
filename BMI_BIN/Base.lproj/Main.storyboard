@@ -63,6 +63,9 @@
                                 <rect key="frame" x="30" y="753.66666666666663" width="333" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <segue destination="Ojh-kr-NRf" kind="presentation" modalPresentationStyle="fullScreen" id="GLe-av-DFK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -96,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gYV-w1-Tes">
-                                <rect key="frame" x="30" y="159" width="333" height="75"/>
+                                <rect key="frame" x="30" y="100" width="333" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaN-5Q-yV5">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="20.333333333333332"/>
@@ -105,7 +108,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ja-Ae-LW1">
-                                        <rect key="frame" x="0.0" y="20.333333333333346" width="333" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="20.333333333333332" width="333" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                     </button>
@@ -118,7 +121,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INP-He-sLd">
-                                <rect key="frame" x="30" y="733.66666666666663" width="333" height="34.333333333333371"/>
+                                <rect key="frame" x="30" y="767.66666666666663" width="333" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                             </button>
@@ -134,6 +137,7 @@
                             <constraint firstItem="aDW-ae-ckB" firstAttribute="trailing" secondItem="gYV-w1-Tes" secondAttribute="trailing" constant="30" id="pMu-bN-v1s"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="vLZ-Ba-fDK"/>
                     <connections>
                         <outlet property="backButton" destination="INP-He-sLd" id="1se-PT-MWC"/>
                         <outlet property="bmiGradeResult" destination="n1e-s9-lob" id="o6c-24-DMg"/>
