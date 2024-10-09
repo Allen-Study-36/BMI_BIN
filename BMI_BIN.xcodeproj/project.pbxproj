@@ -14,6 +14,7 @@
 		872040CB2CAC247800FCBD5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 872040CA2CAC247800FCBD5A /* Assets.xcassets */; };
 		872040CE2CAC247800FCBD5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 872040CC2CAC247800FCBD5A /* LaunchScreen.storyboard */; };
 		872040DA2CAC2B4C00FCBD5A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872040D92CAC2B4C00FCBD5A /* SecondViewController.swift */; };
+		872040DE2CB6EF4700FCBD5A /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872040DD2CB6EF4700FCBD5A /* BMI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		872040CD2CAC247800FCBD5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		872040CF2CAC247800FCBD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		872040D92CAC2B4C00FCBD5A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		872040DD2CB6EF4700FCBD5A /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,33 @@
 		872040C02CAC247700FCBD5A /* BMI_BIN */ = {
 			isa = PBXGroup;
 			children = (
+				872040DC2CB6EF1B00FCBD5A /* Model */,
+				872040DB2CB6EEED00FCBD5A /* Controller */,
 				872040C12CAC247700FCBD5A /* AppDelegate.swift */,
 				872040C32CAC247700FCBD5A /* SceneDelegate.swift */,
-				872040C52CAC247700FCBD5A /* ViewController.swift */,
 				872040C72CAC247700FCBD5A /* Main.storyboard */,
-				872040D92CAC2B4C00FCBD5A /* SecondViewController.swift */,
 				872040CA2CAC247800FCBD5A /* Assets.xcassets */,
 				872040CC2CAC247800FCBD5A /* LaunchScreen.storyboard */,
 				872040CF2CAC247800FCBD5A /* Info.plist */,
 			);
 			path = BMI_BIN;
+			sourceTree = "<group>";
+		};
+		872040DB2CB6EEED00FCBD5A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				872040C52CAC247700FCBD5A /* ViewController.swift */,
+				872040D92CAC2B4C00FCBD5A /* SecondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		872040DC2CB6EF1B00FCBD5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				872040DD2CB6EF4700FCBD5A /* BMI.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				872040DE2CB6EF4700FCBD5A /* BMI.swift in Sources */,
 				872040DA2CAC2B4C00FCBD5A /* SecondViewController.swift in Sources */,
 				872040C62CAC247700FCBD5A /* ViewController.swift in Sources */,
 				872040C22CAC247700FCBD5A /* AppDelegate.swift in Sources */,

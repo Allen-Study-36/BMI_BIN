@@ -64,7 +64,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="calculateBMI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="naU-Lw-DTn"/>
+                                    <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VTD-tV-14r"/>
                                     <segue destination="Ojh-kr-NRf" kind="presentation" identifier="toSecondVC" modalPresentationStyle="fullScreen" id="GLe-av-DFK"/>
                                 </connections>
                             </button>
